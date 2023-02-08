@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/ingridgrz/birthday-api#readme",
   "dependencies": {
+    "csv-parse": "^5.3.5",
     "express": "^4.18.2",
+    "moment": "^2.29.4",
     "nodemon": "^2.0.20"
   }
 }
