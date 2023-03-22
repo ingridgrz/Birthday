@@ -11,6 +11,9 @@ server.use(express.json());
 const birthdayRoute = require("./api/routes/birthdayRoute.js");
 birthdayRoute(server);
 
+const quoteRoute = require("./api/routes/quoteRoute.js");
+quoteRoute(server);
+
 
 server.listen(port, hostname, () => {
     console.log(`Serveur qui tourne sur le port ${port}`);
