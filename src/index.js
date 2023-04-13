@@ -1,9 +1,12 @@
 const express = require('express');
 
+const cors = require('cors');
+
 const hostname = '0.0.0.0';
 const port = 3000;
 
 const server = express();
+server.use(cors());
 
 server.use(express.urlencoded());
 server.use(express.json());

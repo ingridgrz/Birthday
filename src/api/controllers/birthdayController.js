@@ -19,11 +19,10 @@ exports.getTodaysBirthday = async (req, res) => {
     });
 
     res.json({
-        // count_total: STUDENTS_BIRTHDAY.length,
+        count_total: STUDENTS_BIRTHDAY.length + TEACHERS_BIRTHDAY.length,
         students_birthday : {
             students: STUDENTS_BIRTHDAY
         },
-        // count_total: TEACHERS_BIRTHDAY.length,
         teachers_birthday : {
             students: TEACHERS_BIRTHDAY
         }
